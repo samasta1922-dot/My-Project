@@ -18,8 +18,10 @@
   <header class="navbar">
     <div class="container">
       <div class="logo">Samasta</div>
+      <div class="menu-toggle" id="menu-toggle">
+      
       <nav>
-        <ul>
+        <ul class="nav-links" id="nav-Links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">Tentang</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -189,5 +191,11 @@
   </footer>
 
 <script src="script.js" defer></script>
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-Links");
+    navLinks.classList.toggle('active');
+  }
+</script>
 </body>
 </html>

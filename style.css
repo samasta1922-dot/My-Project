@@ -360,15 +360,29 @@ body {
    RESPONSIVE
 ========================= */
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color:saddlebrown;
+}
+
 @media (max-width: 768px) {
 
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .about-container {
+ .nav-links {
+    display: none;
     flex-direction: column;
-    text-align: center;
+    background: #1a1a1a;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+ }}
+  .nav-links.active {
+    display: flex;
   }
 
-}
+  .menu-toggle {
+    display: block;
+  }
