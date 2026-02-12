@@ -64,8 +64,21 @@ window.addEventListener("scroll", () => {
     if (link.getAttribute("href") === "./css/" + currentSection) {
       link.classList.add("active");
     }
-  });
 
+    const hamburger = document.querySelector(".hamburger");
+    if (hamburger) {
+      hamburger.classList.remove("active");
+    }
+    const navLinks= document.getElementById("nav-Links");
+    if (navLinks) {
+      navLinks.classList.remove("active");
+    }
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+  });
 });
 
 

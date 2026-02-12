@@ -356,6 +356,13 @@ body {
   color: #777;
 }
 
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color:rgb(151, 66, 5);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -383,6 +390,6 @@ body {
     display: flex;
   }
 
-  .menu-toggle {
+  .hamburger {
     display: block;
   }
