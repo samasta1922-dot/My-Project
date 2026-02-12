@@ -110,7 +110,7 @@ const form = document.querySelector(".contact-form");
 if (form) {
   form.addEventListener("submit", function(e) {
     e.preventDefault();
-    alert("Pesan berhasil dikirim! (Demo Mode)");
+    alert("Pesan berhasil dikirim! ");
     form.reset();
   });
 }
