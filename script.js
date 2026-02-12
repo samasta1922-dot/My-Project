@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ========================= */
 
   const navbar = document.querySelector(".navbar");
-  const navLinks = document.querySelectorAll(".navbar a");
+  const navLinks = document.querySelectorAll(".nav-links a");
   const navMenu = document.getElementById("navLinks");
   const hamburger = document.querySelector(".hamburger");
   const sections = document.querySelectorAll("section");
