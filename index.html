@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samasta | Portfolio</title>
+
+  <title>Samasta | Web Developer Portfolio</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Portfolio resmi Samasta - Web Developer, Programmer, Tech Enthusiast & Value Investor.">
+  <meta name="keywords" content="Web Developer, Portfolio, Programmer, Samasta, Frontend, Backend">
+  <meta name="author" content="Samasta">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,194 +23,200 @@
 
 <body>
 
-  <!-- ================= NAVBAR ================= -->
-  <header class="navbar">
-    <div class="container">
-      <nav></nav>
-      <div class="logo">Portofolio</div>
-      <div class="menu-toggle" id="menu-toggle">
-      
-      <nav>
-        <ul class="nav-links" id="nav-Links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="container">
+
+    <div class="logo">Samasta</div>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </header>
 
-  <!-- ================= HERO ================= -->
-  <section id="hero" class="hero">
+  </div>
+</header>
 
-    <div class="hero-content">
-      <h1>
-        What's Up dawg! <br>
-        Selamat datang di web Samasta Pria Sigma
 
-      </h1>
+<!-- ================= HERO ================= -->
+<section id="hero" class="hero">
+  <div class="hero-content">
 
-      <div class="hero-divider"></div>
+    <h1>
+      What's Up Dawg! <br>
+      Selamat datang di web Samasta
+    </h1>
 
-      <p class="hero-subtitle">
-        Web Developer | Programmer | Tech Enthusiast | Value Investor
+    <div class="hero-divider"></div>
+
+    <p class="hero-subtitle">
+      Web Developer | Programmer | Tech Enthusiast | Value Investor
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://wa.me/6285816961008?text=Halo%20Baskara"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-primary">
+         Hubungi Saya
+      </a>
+
+      <a href="#portfolio" class="btn-outline">
+        Lihat Portfolio
+      </a>
+    </div>
+
+    <div class="hero-social">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+  <div class="container about-container">
+
+    <div class="about-text">
+      <h2>Tentang Saya</h2>
+      <div class="about-divider"></div>
+
+      <p>
+        Saya adalah seorang Web Developer yang berfokus pada clean code,
+        scalable architecture, dan performa optimal.
       </p>
 
-      <div class="hero-buttons">
-        <a href="https://wa.me/6285816961008?text=Halo%20Baskara,%20Kamu%20kok%20Ganteng%20Babanget%20sih" target="_blank" class="btn-primary">Hubungi Saya</a>
-        <button class="btn-outline">Lihat Portfolio</button>
-      </div>
+      <p>
+        Selain pengembangan web, saya memiliki minat mendalam pada teknologi,
+        analisis fundamental saham, dan pengembangan diri berbasis rasionalitas.
+      </p>
 
-      <div class="hero-social">
-        <a href="https://www.linkedin.com/in/samasta-pria-sigma-700825254/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/samasta1922-dot/My-Project" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/_sambaskara?igsh=MXIxdXpsazRkbWFiaw==" target="_blank">Instagram</a>
-      </div>
+      <p>
+        Filosofi kerja saya sederhana: sistematis, presisi, dan efisien.
+      </p>
     </div>
 
-  </section>
-
-
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="about">
-    <div class="container about-container">
-
-      <div class="about-text">
-        <h2>Tentang Saya</h2>
-        <div class="about-divider"></div>
-
-        <p>
-          Saya adalah seorang Web Developer yang berfokus pada clean code,
-          scalable architecture, dan performa optimal.
-        </p>
-
-        <p>
-          Selain pengembangan web, saya memiliki minat mendalam pada teknologi,
-          analisis fundamental saham, dan pengembangan diri berbasis rasionalitas.
-        </p>
-
-        <p>
-          Filosofi kerja saya sederhana: sistematis, presisi, dan efisien.
-        </p>
-      </div>
-
-      <div class="about-card">
-        <h3>Core Expertise</h3>
-        <ul>
-          <li>Frontend Development (HTML, CSS, JS)</li>
-          <li>Backend Architecture</li>
-          <li>UI/UX Modern Design</li>
-          <li>Financial & Value Investing Analysis</li>
-        </ul>
-      </div>
-
+    <div class="about-card">
+      <h3>Core Expertise</h3>
+      <ul>
+        <li>Frontend Development (HTML, CSS, JS)</li>
+        <li>Backend Architecture</li>
+        <li>UI/UX Modern Design</li>
+        <li>Financial & Value Investing Analysis</li>
+      </ul>
     </div>
-  </section>
+
+  </div>
+</section>
 
 
-  <!-- ================= SKILLS ================= -->
-  <section id="skills" class="skills">
-    <div class="container">
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="skills">
+  <div class="container">
 
-      <h2>Skills</h2>
-      <div class="section-divider"></div>
+    <h2>Skills</h2>
+    <div class="section-divider"></div>
 
-      <div class="skills-grid">
+    <div class="skills-grid">
 
-        <div class="skill-card">
-          <h3>Frontend</h3>
-          <p>HTML5, CSS3, Flexbox, Responsive Design</p>
-        </div>
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <p>HTML5, CSS3, Responsive Design</p>
+      </div>
 
-        <div class="skill-card">
-          <h3>Backend</h3>
-          <p>Node.js, API Integration, Database Design</p>
-        </div>
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <p>Node.js, API Integration, Database Design</p>
+      </div>
 
-        <div class="skill-card">
-          <h3>UI/UX</h3>
-          <p>Modern Layout, Dark Luxury Design, Micro Interaction</p>
-        </div>
+      <div class="skill-card">
+        <h3>UI/UX</h3>
+        <p>Modern Layout, Dark Luxury Design</p>
+      </div>
 
-        <div class="skill-card">
-          <h3>Investment</h3>
-          <p>Fundamental Analysis, Technical Analysis, Market Analysis</p>
-        </div>
-
+      <div class="skill-card">
+        <h3>Investment</h3>
+        <p>Fundamental & Technical Analysis</p>
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
 
-  <!-- ================= PORTFOLIO ================= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
 
-      <h2>Portfolio</h2>
-      <div class="section-divider"></div>
+    <h2>Portfolio</h2>
+    <div class="section-divider"></div>
 
-      <div class="portfolio-grid">
+    <div class="portfolio-grid">
 
-        <div class="portfolio-card">
-          <h3>Project 1</h3>
-          <p>Modern Landing Page Design</p>
-        </div>
+      <div class="portfolio-card">
+        <h3>Project 1</h3>
+        <p>Modern Landing Page Design</p>
+      </div>
 
-        <div class="portfolio-card">
-          <h3>Project 2</h3>
-          <p>Responsive Company Website</p>
-        </div>
+      <div class="portfolio-card">
+        <h3>Project 2</h3>
+        <p>Responsive Company Website</p>
+      </div>
 
-        <div class="portfolio-card">
-          <h3>Project 3</h3>
-          <p>Financial Dashboard UI</p>
-        </div>
-
+      <div class="portfolio-card">
+        <h3>Project 3</h3>
+        <p>Financial Dashboard UI</p>
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact">
-    <div class="container">
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="container">
 
-      <h2>Hubungi Saya</h2>
-      <div class="section-divider"></div>
+    <h2>Hubungi Saya</h2>
+    <div class="section-divider"></div>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Nama Anda" required>
-        <input type="email" placeholder="Email Anda" required>
-        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-        <button type="submit" class="btn-primary">Kirim Pesan</button>
-      </form>
+    <form class="contact-form">
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Kirim Pesan</button>
+    </form>
 
-    </div>
-  </section>
+  </div>
+</section>
 
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Samasta. All Rights Reserved.</p>
-    </div>
-  </footer>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Samasta. All Rights Reserved.</p>
+  </div>
+</footer>
 
-<script src="script.js" defer></script>
-<script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("nav-Links");
-    navLinks.classList.toggle('active');
-  }
-</script>
+
+<!-- ================= SCRIPT ================= -->
+<script src="script.js"></script>
+
 </body>
 </html>
