@@ -51,6 +51,17 @@ body {
   letter-spacing: 1px;
 }
 
+/* NAVBAR SHRINK EFFECT */
+
+.navbar.shrink {
+  padding: 12px 0;
+  background: rgba(15, 15, 15, 0.95);
+}
+
+.navbar.shrink .logo {
+  font-size: 1.1rem;
+}
+
 /* NAV LINKS */
 
 .nav-links {
@@ -161,7 +172,7 @@ inset: 0;
 background: radial-gradient(-45deg,#0f0f0f, #1a1a1a, #141414 , #0b0b0b);
 background-size: 400% 400%;
 animation: gradientAnimation 15s ease infinite;
-z-index: -2;
+z-index: 2;
 }
 
 .divider {
@@ -171,8 +182,6 @@ z-index: -2;
   margin: 20px auto;
   animation: grow 1.5s forwards;
 }
-
-
 
     @keyframes gradientAnimation {
       0%{background-position:0% 50%};
@@ -185,7 +194,7 @@ z-index: -2;
 position: absolute;
 width: 600px;
 height: 600px;
-background: radial-gradient(circle, rgba(212, 175, 55, 0.2), transparent 70%);
+background: radial-gradient(circle, rgba(212, 175, 55, 0.2), transparent 60%);
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -206,7 +215,7 @@ z-index: 1;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   background: linear-gradient(90deg, #d4af37, #f5e6a1);
   -webkit-background-clip: text;
   background-clip: text;
