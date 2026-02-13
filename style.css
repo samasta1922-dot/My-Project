@@ -134,6 +134,35 @@ body {
   background: radial-gradient(circle at top, #1a1a1a 0%, #0f0f0f 60%, #0b0b0b 100%);
 }
 
+    /*animated background elements*/
+.hero-bg {
+position: absolute;
+inset: 0;
+background: radial-gradient(-45deg,#0f0f0f, #1a1a1a, #141414 , #0b0b0b);
+background-size: 400% 400%;
+animation: gradientAnimation 15s ease infinite;
+z-index: -2;
+}
+
+    @keyframes gradientAnimation {
+      0%{background-position:0% 50%};
+      50%{background-position:100% 50%};
+      100%{background-position:0% 50%};
+    }
+
+    /*glow effect*/
+.hero-glow {
+position: absolute;
+width: 600px;
+height: 600px;
+background: radial-gradient(circle, rgba(212, 175, 55, 0.2), transparent 70%);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+filter: blur(100px);
+z-index: 1;
+}
+
 .hero-content {
   max-width: 850px;
   padding: 60px 40px;
@@ -147,10 +176,11 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.6rem;
-  color: #d4af37;
-  margin-bottom: 20px;
-  font-weight: 600;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #d4af37, #f5e6a1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-divider {
