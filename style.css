@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
@@ -112,7 +112,7 @@ body {
   height: 3px;
   background: #d4af37;
   border-radius: 3px;
-  transition: 0.3s ease;
+  transition: 0.7s ease;
 }
 
 /* ================== 
